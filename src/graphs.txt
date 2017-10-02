@@ -1,0 +1,7 @@
+http://www.ensembl.org/human
+http://www.uniprot.org/proteomes/human
+http://bio2rdf.org/omim_resource:bio2rdf.dataset.omim.R4
+http://biohackathon.org/resource/faldo.rdf
+http://purl.obolibrary.org/obo/so.owl
+http://semanticscience.org/ontology/sio.owl
+http://purl.uniprot.org/core/
