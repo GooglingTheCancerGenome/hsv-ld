@@ -38,7 +38,7 @@ curl --stderr - -LO "ftp://ftp.ensembl.org/pub/release-${ENSEMBL_RELEASE}/rdf/ho
 	&& echo "http://www.ensembl.org/pig" > homo_sapiens_xrefs.ttl.graph
 
 curl --stderr - -L -o uniprot_human.rdf.gz "http://www.uniprot.org/uniprot/?format=rdf&compress=yes&query=proteome:UP000005640" \
-	&& echo "http://www.uniprot.org/proteomes/human" > uniprot_human_$(date "+%Y-%m-%d").rdf.graph
+	&& echo "http://www.uniprot.org/proteomes/human" > uniprot_human.rdf.graph
 
 # download human genome data from Ensembl
 curl --stderr - -LO "ftp://ftp.ensembl.org/pub/release-${ENSEMBL_RELEASE}/rdf/homo_sapiens/homo_sapiens.ttl.gz" \
