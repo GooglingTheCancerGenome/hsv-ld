@@ -32,10 +32,10 @@ curl --stderr - -LH "Accept: application/rdf+xml" -o uniprot_core.rdf "http://pu
 
 # download human genome and proteome data from Ensembl and UniProt Reference Proteomes, respectively
 curl --stderr - -LO "ftp://ftp.ensembl.org/pub/release-${ENSEMBL_RELEASE}/rdf/homo_sapiens/homo_sapiens.ttl.gz" \
-	&& echo "http://www.ensembl.org/pig" > homo_sapiens.ttl.graph
+	&& echo "http://www.ensembl.org/human" > homo_sapiens.ttl.graph
 
 curl --stderr - -LO "ftp://ftp.ensembl.org/pub/release-${ENSEMBL_RELEASE}/rdf/homo_sapiens/homo_sapiens_xrefs.ttl.gz" \
-	&& echo "http://www.ensembl.org/pig" > homo_sapiens_xrefs.ttl.graph
+	&& echo "http://www.ensembl.org/human" > homo_sapiens_xrefs.ttl.graph
 
 curl --stderr - -L -o uniprot_human.rdf.gz "http://www.uniprot.org/uniprot/?format=rdf&compress=yes&query=proteome:UP000005640" \
 	&& echo "http://www.uniprot.org/proteomes/human" > uniprot_human.rdf.graph
