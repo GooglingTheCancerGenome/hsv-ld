@@ -11,7 +11,7 @@ This software provides semantically integrated data on structural variants (SVs)
 ```
 cd hsv-ld/src
 make all # with defaults: CONTAINER_NAME=virtuoso and CONTAINER_PORT=8890 (in development)
-make -e all CONTAINER_NAME=abg-ld CONTAINER_PORT=80 # override defaults (in production)
+make -e all CONTAINER_NAME=hsv-ld CONTAINER_PORT=80 # override defaults (in production)
 ```
 
 Note: other `make` rules: `pull-image`, `build-image`, `start-srv`, `stop-srv`, `restart-srv`, `install-pkgs`, `get-rdf`, `import-rdf`, `update-rdf`, `post-install` and `clean`.
