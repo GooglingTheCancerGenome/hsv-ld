@@ -11,7 +11,7 @@ BIO2RDF_RELEASE=4
 DATA_DIR=$1
 
 if [ "${DATA_DIR}" != "" ]; then
-	mkdir -p $DATA_DIR && cd $DATA_DIR
+	mkdir -p "$DATA_DIR" && cd "$DATA_DIR"
 fi
 
 # download ontologies
