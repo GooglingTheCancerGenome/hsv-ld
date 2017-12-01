@@ -48,7 +48,7 @@ curl --stderr - -LO "ftp://ftp.ensembl.org/pub/release-${ENSEMBL_RELEASE}/rdf/ho
         && echo "http://www.ensembl.org/human" > homo_sapiens_xrefs.ttl.graph
 
 # download OMIM genotype-phenotype data via Bio2RDF
-curl --stderr - -LO "http://download.bio2rdf.org/release/${BIO2RDF_RELEASE}/omim/omim.nq.gz" \
+curl --stderr - -LO "http://download.bio2rdf.org/files/release/${BIO2RDF_RELEASE}/omim/omim.nq.gz" \
         && echo "http://bio2rdf.org/omim_resource:bio2rdf.dataset.omim.R4" > omim.nq.graph
 
 gzip *.rdf
